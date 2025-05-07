@@ -1,4 +1,4 @@
-# Trakable App | Website
+# Trakable | Website
 
 > Track today. Transform tomorrow.
 
