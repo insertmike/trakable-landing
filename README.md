@@ -53,7 +53,7 @@ yarn dev
 
 The site will be available at [http://localhost:3000](http://localhost:3000).
 
-## 📦 Project Structure
+## Website Project Structure
 
 ```
 trakable/
@@ -66,7 +66,7 @@ trakable/
 └── package.json     # Project dependencies and scripts
 ```
 
-## 🚀 Deployment
+## Website Deployment
 
 The website is optimized for deployment on Vercel. For deployment:
 
