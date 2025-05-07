@@ -39,16 +39,12 @@ cd trakable
 
 ```bash
 npm install
-# or
-yarn install
 ```
 
 3. **Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 The site will be available at [http://localhost:3000](http://localhost:3000).
