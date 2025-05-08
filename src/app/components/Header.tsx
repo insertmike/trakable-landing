@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
-            src="/favicon.svg"
+            src="favicon.svg"
             alt="Trakable"
             width={30}
             height={30}

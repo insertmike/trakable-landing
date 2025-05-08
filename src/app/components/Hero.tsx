@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 flex justify-center relative order-2">
             <div className="relative h-[380px] w-[250px] md:h-[500px] md:w-[320px] -mr-16 z-10">
               <Image
-                src="/app_today_tab_screenshot.png"
+                src="app_today_tab_screenshot.png"
                 alt="Trakable App Screenshot"
                 fill
                 className="object-contain"
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
             <div className="relative h-[380px] w-[250px] md:h-[500px] md:w-[320px] mt-4">
               <Image
-                src="/app-task-details-screen.png"
+                src="app-task-details-screen.png"
                 alt="Trakable App Features"
                 fill
                 className="object-contain"

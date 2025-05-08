@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Trakable",
   description: "Track your habits and events with Trakable",
   icons: {
-    icon: "/favicon.svg",
+    icon: "favicon.svg",
   },
 };
 
