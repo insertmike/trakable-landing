@@ -10,7 +10,7 @@ const Community = () => {
             Join Our Community
           </h2>
           <p className="text-gray-400 mb-8">
-            Be part of r/trakableapp and connect with other users. Request
+            Be part of r/trakable and connect with other users. Request
             features, get help, share success stories, and shape Trakable&apos;s
             future together.
           </p>
@@ -27,7 +27,7 @@ const Community = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-              r/trakableapp
+              r/trakable
             </h3>
 
             <p className="text-gray-700 mb-6">
@@ -37,7 +37,7 @@ const Community = () => {
             </p>
 
             <Link
-              href="https://www.reddit.com/r/trakableapp/"
+              href="https://www.reddit.com/r/trakable/"
               target="_blank"
               className="inline-flex items-center justify-center py-3 px-6 rounded-xl bg-orange-500 text-white font-medium hover:bg-orange-600 transition-colors"
             >

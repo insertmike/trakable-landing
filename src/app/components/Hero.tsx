@@ -27,7 +27,7 @@ const Hero = () => {
                 Download App
               </Link>
               <Link
-                href="https://www.reddit.com/r/trakableapp/"
+                href="https://www.reddit.com/r/trakable/"
                 target="_blank"
                 className="inline-flex items-center justify-center py-3 px-6 rounded-xl bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition-colors"
               >

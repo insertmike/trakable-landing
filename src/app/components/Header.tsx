@@ -73,7 +73,7 @@ const Header = () => {
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link
-            href="https://www.reddit.com/r/trakableapp/"
+            href="https://www.reddit.com/r/trakable/"
             target="_blank"
             className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors flex items-center"
           >
@@ -108,7 +108,7 @@ const Header = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link
-              href="https://www.reddit.com/r/trakableapp/"
+              href="https://www.reddit.com/r/trakable/"
               target="_blank"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2 flex items-center"
               onClick={() => setIsMenuOpen(false)}

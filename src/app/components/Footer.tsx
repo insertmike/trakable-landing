@@ -22,7 +22,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="https://www.reddit.com/r/trakableapp/"
+                    href="https://www.reddit.com/r/trakable/"
                     target="_blank"
                     className="text-gray-600 hover:text-green-600 transition-colors"
                   >

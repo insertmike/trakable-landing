@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Trakable",
-  description: "Track your habits and events with Trakable",
+  description:
+    "Start building better habits with Trakable — track routines, gain insights, and stay consistent with what matters most to you.",
   icons: {
     icon: "favicon.svg",
   },
