@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import DownloadButtons from "./DownloadButtons";
 
 const Hero = () => {
   return (
@@ -20,19 +20,7 @@ const Hero = () => {
               Trakable. Build routines and track what matters to you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="https://trakable.app"
-                className="inline-flex items-center justify-center py-3 px-6 rounded-xl bg-orange-500 text-white font-medium hover:bg-green-600 transition-colors"
-              >
-                Download App
-              </Link>
-              <Link
-                href="https://www.reddit.com/r/trakable/"
-                target="_blank"
-                className="inline-flex items-center justify-center py-3 px-6 rounded-xl bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition-colors"
-              >
-                Join Community
-              </Link>
+              <DownloadButtons />
             </div>
           </div>
 

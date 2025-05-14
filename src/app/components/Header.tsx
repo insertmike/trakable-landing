@@ -3,21 +3,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import DownloadButtons from "./DownloadButtons";
 
 const ExternalLinkIcon = () => (
   <svg
-    className="inline-block ml-1 w-3 h-3"
+    className="ml-1 w-4 h-4"
+    viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-    />
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
   </svg>
 );
 
@@ -94,12 +94,7 @@ const Header = () => {
           >
             Contact
           </Link>
-          <Link
-            href="https://trakable.app"
-            className="inline-flex items-center justify-center py-2 px-4 rounded-xl bg-orange-500 text-white text-sm font-medium hover:bg-green-600 transition-colors"
-          >
-            Download App
-          </Link>
+          <DownloadButtons />
         </nav>
       </div>
 
@@ -132,13 +127,7 @@ const Header = () => {
             >
               Contact
             </Link>
-            <Link
-              href="https://trakable.app"
-              className="inline-flex items-center justify-center py-2 px-4 rounded-xl bg-green-500 text-white text-sm font-medium hover:bg-green-600 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Download App
-            </Link>
+            <DownloadButtons />
           </div>
         </div>
       )}

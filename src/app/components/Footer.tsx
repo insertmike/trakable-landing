@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DownloadButtons from "./DownloadButtons";
 
 const Footer = () => {
   return (
@@ -39,12 +40,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="https://trakable.app"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
-                  >
-                    Download
-                  </Link>
+                  <DownloadButtons />
                 </li>
               </ul>
             </div>
