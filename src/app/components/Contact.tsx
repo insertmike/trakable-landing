@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
 
           <Link
-            href="mailto:contact@dexterlab.site"
+            href="mailto:contact@trakable.app"
             className="inline-flex items-center justify-center py-3 px-6 rounded-xl bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors"
           >
             <svg

@@ -89,7 +89,7 @@ const Header = () => {
             <ExternalLinkIcon />
           </Link>
           <Link
-            href="mailto:contact@dexterlab.site"
+            href="mailto:contact@trakable.app"
             className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             Contact
@@ -121,7 +121,7 @@ const Header = () => {
               <ExternalLinkIcon />
             </Link>
             <Link
-              href="mailto:contact@dexterlab.site"
+              href="mailto:contact@trakable.app"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >

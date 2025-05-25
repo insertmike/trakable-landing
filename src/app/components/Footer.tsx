@@ -52,7 +52,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="mailto:contact@dexterlab.site"
+                    href="mailto:contact@trakable.app"
                     className="text-gray-600 hover:text-green-600 transition-colors"
                   >
                     Contact
