@@ -32,8 +32,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="https://www.notion.so/1da606d25a9080e39cdefd0961afc8f0?pvs=21"
-                    target="_blank"
+                    href="#roadmap"
                     className="text-gray-600 hover:text-green-600 transition-colors"
                   >
                     Roadmap

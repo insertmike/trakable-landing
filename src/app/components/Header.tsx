@@ -81,12 +81,10 @@ const Header = () => {
             <ExternalLinkIcon />
           </Link>
           <Link
-            href="https://www.notion.so/1da606d25a9080e39cdefd0961afc8f0?pvs=21"
-            target="_blank"
-            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors flex items-center"
+            href="#roadmap"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             Roadmap
-            <ExternalLinkIcon />
           </Link>
           <Link
             href="mailto:contact@trakable.app"
@@ -112,13 +110,11 @@ const Header = () => {
               <ExternalLinkIcon />
             </Link>
             <Link
-              href="https://www.notion.so/1da606d25a9080e39cdefd0961afc8f0?pvs=21"
-              target="_blank"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2 flex items-center"
+              href="#roadmap"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Roadmap
-              <ExternalLinkIcon />
             </Link>
             <Link
               href="mailto:contact@trakable.app"
