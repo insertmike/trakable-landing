@@ -14,7 +14,7 @@ const RoadMap = () => {
     },
     {
       status: "In Consideration",
-      count: 4,
+      count: 6,
       color: "from-gray-500 to-gray-600",
       borderColor: "border-gray-200",
       bgColor: "bg-gray-50",
@@ -22,6 +22,8 @@ const RoadMap = () => {
         "Achievements & Rewards",
         "Planned Exceptions, Skip Days",
         "Attach multiple images to completions",
+        "Sync Trakables Across All Devices",
+        "Shared Habits with Friends",
       ],
     },
   ];
