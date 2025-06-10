@@ -10,7 +10,7 @@ const RoadMap = () => {
       color: "from-green-500 to-green-600",
       borderColor: "border-green-200",
       bgColor: "bg-green-50",
-      items: ["Reminders", "Home Screen Widgets", "Upload Images from Gallery"],
+      items: ["Reminders", "Home Screen Widgets"],
     },
     {
       status: "In Consideration",
@@ -20,10 +20,11 @@ const RoadMap = () => {
       bgColor: "bg-gray-50",
       items: [
         "Achievements & Rewards",
-        "Planned Exceptions, Skip Days",
         "Attach multiple images to completions",
         "Sync Trakables Across All Devices",
         "Shared Habits with Friends",
+        "Planned Exceptions, Skip Days",
+        "Challenges",
       ],
     },
   ];
