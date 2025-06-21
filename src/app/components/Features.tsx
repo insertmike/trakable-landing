@@ -144,7 +144,7 @@ const Features = () => {
           />
 
           <FeatureCard
-            title="Events"
+            title="Log Events"
             description="Log and track important occurrences in your life. Ideal for monitoring occasional events and spotting patterns over time."
             iconBgColor="bg-orange-500"
             icon={gridIcon}
