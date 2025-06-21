@@ -2,49 +2,51 @@
 
 import { useEffect, useState } from 'react';
 
-declare global {
-  interface Window {
-    gtag_enable?: boolean;
-    dataLayer?: any[];
-    gtag?: (...args: any[]) => void;
-  }
-}
+const GA_TRACKING_ID = 'G-5H29D5M07R';
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    // Check if we already have consent
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setShowBanner(true);
+    } else if (consent === 'accepted') {
+      loadGoogleAnalytics();
     }
   }, []);
 
-  const acceptCookies = () => {
-    localStorage.setItem('cookie-consent', 'accepted');
-    setShowBanner(false);
-    // Trigger GA load
-    window.gtag_enable = true;
-    // Load GA
+  const loadGoogleAnalytics = () => {
     const script1 = document.createElement('script');
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=G-5H29D5M07R`;
+    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
     script1.async = true;
-    document.head.appendChild(script1);
 
     const script2 = document.createElement('script');
     script2.text = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-5H29D5M07R');
+      gtag('config', '${GA_TRACKING_ID}', {
+        page_path: window.location.pathname,
+        cookie_flags: 'SameSite=None;Secure'
+      });
     `;
-    document.head.appendChild(script2);
+
+    // Only append scripts if they haven't been loaded yet
+    if (!document.querySelector(`script[src="${script1.src}"]`)) {
+      document.head.appendChild(script1);
+      document.head.appendChild(script2);
+    }
   };
 
-  const declineCookies = () => {
-    localStorage.setItem('cookie-consent', 'declined');
+  const handleCookieConsent = (accepted: boolean) => {
+    const consentValue = accepted ? 'accepted' : 'declined';
+    localStorage.setItem('cookie-consent', consentValue);
     setShowBanner(false);
+    
+    if (accepted) {
+      loadGoogleAnalytics();
+    }
   };
 
   if (!showBanner) return null;
@@ -54,7 +56,7 @@ export default function CookieConsent() {
       <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-600 flex-1">
           We use cookies to analyze our website traffic and improve your experience.
-          By clicking "Accept", you consent to our use of cookies. See our{' '}
+          By clicking &quot;Accept&quot;, you consent to our use of cookies. See our{' '}
           <a href="/privacy" className="text-orange-500 hover:underline">
             Privacy Policy
           </a>{' '}
@@ -62,13 +64,13 @@ export default function CookieConsent() {
         </p>
         <div className="flex gap-4">
           <button
-            onClick={declineCookies}
+            onClick={() => handleCookieConsent(false)}
             className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800"
           >
             Decline
           </button>
           <button
-            onClick={acceptCookies}
+            onClick={() => handleCookieConsent(true)}
             className="px-4 py-2 text-sm text-white bg-orange-500 rounded-md hover:bg-blue-700"
           >
             Accept
