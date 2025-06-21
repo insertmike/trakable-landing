@@ -10,14 +10,13 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 lg:pr-16 mb-8 lg:mb-0 order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-6 leading-tight">
-              Track today.
+              Build Habits
               <br />
-              <span className="text-green-500">Transform</span> <br />
-              <span className="text-gray-300">tomorrow.</span>
+              <span className="text-orange-500">Break Habits</span> <br />
+              <span className="text-gray-300">Log Events.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg">
-              Your journey to better habits and meaningful insights starts with
-              Trakable. Build routines and track what matters to you.
+            Kick the bad habits out. Invite better ones in. Trakable keeps the door.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <DownloadButtons />

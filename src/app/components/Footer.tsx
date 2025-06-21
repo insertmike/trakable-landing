@@ -11,7 +11,7 @@ const Footer = () => {
               Trakable
             </h3>
             <p className="text-gray-600 max-w-xs">
-              Track today. Transform tomorrow.
+              Build Habits, Break Habits, Log Events.
             </p>
           </div>
 
